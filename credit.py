@@ -14,7 +14,7 @@ def isvalid(n):
 
 def cardtype(n):
     a=int(n[0]);b=int(n[0:2])
-    if b>49 and b<56:return '**MASTERCARD'
+    if b>50 and b<56:return '**MASTERCARD'
     if b==34 or b==37:return '**AMEX'
     if a==4: return '**VISA'
     return 'NONE--'
